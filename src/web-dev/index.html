@@ -1,7 +1,10 @@
-<hmtl>
-    <head>
-    </head>
-    <body>
-        <h1>WEB01<h1>
-    </body>
-</hmtl>
+<h1>Frontend DEV</h1>
+<button onclick="fetchData()">Consultar API</button>
+
+<script>
+async function fetchData() {
+  const res = await fetch('http://localhost:4002');
+  const data = await res.text();
+  alert(data);
+}
+</script>
